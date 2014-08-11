@@ -1,0 +1,189 @@
+Enter into insert mode after the character your cursor is on.	a
+Enter into insert mode at the end of the current line.	A
+Move cursor to first character of previous word.	b
+Move cursor to first character of previous non-blank series of characters.	B
+Scroll page backwards (move up in the file).	&lt;C-b&gt;
+Change word. This will delete the word your cursor is over and enter into insert mode.	cw
+Change all text in between a set of parenthesis.	ci(
+If your cursor is in between a set of quotes, delete everything inside those quotes and drop into insert mode.	"ci"""
+Change text til the quotes.	"ct"""
+Delete text from cursor up til the 2nd quote in a line.	"2ct"""
+Change from cursor backwards finding and including the previous quote.	"cF"""
+Delete until the end of the line and enter into insert mode.	C
+Change directories to one previous.	:cd ../
+Change directories to a known directory.	:cd ~/Sites/projectname
+In Normal mode, any pending command is aborted. Also aborts current search.	&lt;C-c&gt;
+Delete the current line.	dd
+Delete from cursor until the end of the line.	D or d$
+Delete the word your cursor is on.	dw
+This will delete the word your cursor is on as well as the next one.	2dw
+Delete from cursor to beginning of the line.	d^
+Delete up to first matched pattern.	d/pattern
+Delete from cursor to find the 2nd quote mark.&nbsp;	"df"""
+Delete everything inside of these quotes.	"di"""
+Delete everything with quotes wrapped around (including the quotes).	"da"""
+Scroll down half page.	&lt;C-d&gt;
+[EX]&nbsp;Deletes all lines in a file.	:%d
+[EX] Deletes lines 2 through 8	:2,8d
+Jump to the end of the next word.	e
+Jump to the end of the next non-blank series of characters.	E
+Jump to the end of the previous word.	ge
+[EX] Jump to 5 minutes ago	:ea 5m
+[EX] Jump to 1 hour ago	:ea 1h
+[EX] Open file in current window	:e filename
+[EX] Open file explorer in current directory	:e .
+Jump to the next r (same line only).	fr
+Jump to the next t (same line only).	ft
+Jump to the next , (same line only).	f,
+Jump to the previous r (same line only)	Fr
+Jump to the previous t (same line only).	Ft
+Jump to the previous , (same line only).	F,
+"Delete from cursor through two occurences of ""."	"2df"""
+Scroll one full page forward.	&lt;C-f&gt;
+Go to url under your cursor in a browser.	gx
+Go open file under your cursor in the current window.	gf
+Go to the last place you edited text.	g;
+Go forward in the change list.	g,
+Go forward 4 spots on the change list.	4g,
+Format the entire file.	gg=G &nbsp;or &nbsp;1G=G
+Grab the next match from last search and visually select it.	gn
+Go into insert mode at the end of the last insert you did.	gi
+Go to the end of the previous word.	ge
+Pastes just like p but leave the cursor after the pasted text.	gp
+Pastes just like P but leave the cursor after the pasted text.	gP
+Reselect most recent visual selection.	gv
+Reselect most recent visual selection then moves to the end of the line, and enters insert mode.	gv$A
+<div>Switch case of all characters in current line.</div><div><br /></div>	g~~
+Format selected text.	gq
+[EX] Run macro q on all lines in a file that match a pattern.	:%g/pattern/norm @q
+[EX] This searches for all lines of a file that start with a digit as the first character. It then copies the line and pastes it at the bottom of the file.	:%g/^\d/norm yyGp
+[EX]&nbsp;Delete all blank lines in a file.	:%g/^$/norm dd
+[EX]&nbsp;Yank (copy) all lines that start with a dollar sign and append them to register A.	":%g/^\$/norm ""Ayy"
+Move cursor one character to the left.	h
+Move cursor four characters to the left.	4h
+Delete character to the left of cursor.	dh
+<div>Open up vim help in a new window.</div>	:h
+Opens vim help to documentation on the a key.	:h a
+Open vim help to documentation on pressing control and r while in insert mode.	:h i_CTRL-R
+Move cursor to first (highest) line in window.	H
+Enter insert mode where your cursor is.	i
+Insert 4 tabs (leaves you in command mode, not insert mode).	4i&lt;tab&gt;&lt;esc&gt;
+Insert 80 * characters.	80i*&lt;esc&gt;
+Insert text at the very beginning of the line.	I
+Move cursor down one line.	j
+Move the cursor down 32 lines.	32j
+Join two lines removing indent.	J
+Moves cursor up one line.	k
+Move cursor up 8 lines.	8k
+Rotate window to horizontal split.	&lt;C-w&gt;K
+Delete current line and line above cursor.	dk
+Move cursor right one character.	l
+Delete character under cursor.	x &nbsp;or &nbsp;dl
+Move cursor to last line in window.	L
+Mark spot as k.	mk
+"Return the cursor to the spot you marked as ""k""."	'k
+"Delete from the cursor's position to the spot you marked as ""k""."	d'k
+"Change from the cursor's position to the spot you marked as ""k""."	c'k
+"Yank/copy from the cursor's position to the spot you marked as ""k""."	y'k
+Move cursor to middle of window.	M
+Move forward to next match of a search pattern.	n
+Move backwards to previous match of a search pattern.	N
+Search forward for the last used search pattern.	gn
+Open a new line below where your cursor is and places you in insert mode.	o
+Opens a new line above where your cursor is and places you in insert mode.	O
+Go backwards in the jumplist.	&lt;C-o&gt;
+Go backwards 12 spots in the jumplist.	12&lt;C-o&gt;
+Close all splits except for the current one.	:only
+Paste in the last thing you yanked or deleted (copied or cut) after the cursor.	p
+Paste in the last thing you yanked or deleted (copied or cut) before the cursor.	P
+Paste in the last thing you yanked or deleted twice.	2p
+This will swap two characters.&nbsp;	xp &nbsp;or &nbsp;dlp
+Paste in text from your system clipboard.	"""*p"
+Paste in text from the second register.	"""2p<div>Useful when delete something you want to paste and then delete&nbsp;something else.</div>"
+Pastes in the name of the current file.	"""%p"
+Paste in last copy or delete on line 212.&nbsp;	:212pu
+Paste in system clipboard text at line 42.	:42pu *
+Paste in your last search pattern.	"""/p"
+Paste in your last search pattern when you are on the command line.	:&lt;C-r&gt;/
+Paste in the contents of register a.	"""ap<div>To see a list of registers, type :reg<br /><div><br /></div></div>"
+Paste in evaluation of the expression 8*8.	"""= 8*8&lt;CR&gt;p<div>= is the expression register</div>"
+Begin recording into register a.	qa<div>Hit q again to end recording.</div>
+Play back what you just recorded into register a.	@a
+<div>Given the line:</div><div><br /></div>.icon-1 { background-image:url(img-1.png); }<div><br /></div><div>Record a macro into register a to copy the line and increment the numbers.</div>	qa0yyp/\d&lt;CR&gt;&lt;c-x&gt;n&lt;c-x&gt;0q<div>Do it 99 more times with 99@a</div>
+[EX] Quit file only if you have no unsaved changes.	:q
+[EX] Quit file without writing any of your changes.	:q!
+[EX] Save and quit file.	:wq
+[EX] Save lines 12 to 42 and quit file.	:12,42wq
+[EX] Save and quit all files in buffer.	:wqa
+Replace the character under the cursor with a.	ra
+Enter “replace mode” which is like insert mode except you will overwrite characters instead of insert between them.	R
+[EX]&nbsp;Read the contents of filename and place into the current buffer.	:r filename
+[EX]&nbsp;Pastes in the output of ls.	:r !ls<div>! calls an external&nbsp;</div>
+[EX]&nbsp;Paste in the directory listing of the last directory you were in.	:r !cd -; ls
+[EX]&nbsp;Paste in the content from somewebsite.com without any of the markup.&nbsp;	:r !w3m -dump http://somewebsite.com<div>(w3m must be installed)</div>
+[EX] Paste in the output from running tree on a directory.	:r !tree
+[EX]&nbsp;Print out a list of available registers and their contents.	:reg &nbsp;or &nbsp;:registers
+Delete the character your cursor is on and enter into insert mode.	s
+Delete the whole line you are on and enter into insert mode.	S
+[EX] Split the current window horizontally.	:sp
+[EX] Split the current window horizontally with a file named file.txt.	:sp file.txt
+[EX] Split the current window vertically.	:vsp file.txt
+[EX] Replaces foo with bar on the current line for the first occurance of foo.	:s/foo/bar
+[EX] Replace foo with bar on lines 12,42 for the first occurance of foo in each line.	:12,42s/foo/bar
+[EX] Replaces all occurances of foo with bar on lines 12,42.	:12,42s/foo/bar/g
+[EX] Replace all occurances of foo with bar for the entire file.	:%s/foo/bar/g
+[EX] Replace all occurances of foo with bar for the last visual selection.	:'&lt;,'&gt;s/foo/bar/g
+[EX]&nbsp;Repeat last substitute with same substitute string but with last used search pattern across the entire file.	:%~
+[EX]&nbsp;Delete all classes in markup for the current file.	":%s/\ class="".*""//g"""
+[EX]&nbsp;Delete all ids in markup for the current file.	":%s/\ id="".*""//g"""
+[EX]&nbsp;Delete all classes in markup for all files in buffer.	":bufdo %s/\ class="".*""//ge | update"
+[EX] Delete all classes in markup for all files in the current tab.	":tabdo %s/\ class="".*""//ge | update"
+[EX]&nbsp;Removes trailing whitespace.	:%s/\s\+$//e
+Put cursor one character before the next occurance of f.	tf
+Repeat latest f, F, t, or T.	;
+Repeat latest f, F, t, or T in the opposite direction.	,
+Delete up until the next &lt;.	dt&lt;
+"Delete from cursor until next ""."	"dt"""
+Delete backwards from cursor until previous }.	dT}
+Undo changes.	u
+Undo all latest changes on one line, the line where the latest change was made.	U
+Redo changes.	&lt;C-r&gt;
+Scroll window upwards to the amount set by the “scroll” option.	&lt;C-u&gt;
+[EX] List all the history points in your tree of changes.	:undol
+Start visual mode on a per character basis.	v
+Starts visual mode linewise (selects whole lines).	V
+Starts visual mode blockwise.	&lt;C-v&gt;
+Reselect last visual selection.	gv
+Moves to the next word.	w
+Moves to the third word.	3w
+Delete character under your cursor.	x
+Delete a character before the cursor.&nbsp;	X &nbsp;or &nbsp;dh
+Copy current line.	yy
+Copies current line into register x.	"""xyy"
+Copy lines 12 through 112.	:12,112y
+Copy from mark k to the current position of your cursor.	y'k
+Copy from current cursor postion to the next quote on the same line.	"yt"""
+Copy from current cursor postion to the next &gt; on the same line.	yt&gt;
+Copies from current cursor postion to the previous &gt; on the same line.	yT&gt;
+Copy from current cursor postion up to and including the next &gt; on the same line.	yf&gt;
+<div>Copyfrom current cursor postion up to and including the previous &gt; on the same line.</div><div><br /></div>	yF&gt;
+Scroll up by 1 line.	&lt;C-y&gt;
+Scroll up 12 lines.	12&lt;C-y&gt;
+Redraw the screen so that your cursor line is at the top of the window.&nbsp;	z&lt;CR&gt; &nbsp;or &nbsp;zt
+Redraw the screen so that your cursor line is at the bottom of the window.	z- &nbsp;or zb
+Redraw the screen so that your cursor line is at the middle of the window.	zz
+Search forward for the word under cursor in current file.	*
+Search backward for the word under cursor in current file.	#
+Forward search for things.	/
+Forward search for the next opening paragraph tag.	/&lt;p&gt;
+Forward search for the next space.	/\
+Search backwards.	?
+Search backwards for the string http.	?http
+Format current line of code.	==
+Indent current line.	&gt;&gt;
+Repeat last change.	.
+Repeat last command line.	@:
+Format lines 12 through 54.	:12,54=
+Indent lines 56 through 99.	:56,99&gt;
+Yank / copy lines 52 through 84.	:52,84y
+Indent 12 lines including the line you are on.	12&gt;&gt;
