@@ -1,4 +1,4 @@
-@mrmrs has a very nice reference site with some useful Vim commands.
+[@mrmrs](https://github.com/mrmrs) has a very nice reference site with some useful Vim commands.
 
 http://xn--h4hg.ws/2013/12/15/common-vim/
 
