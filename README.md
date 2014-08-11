@@ -2,7 +2,7 @@
 
 http://xn--h4hg.ws/2013/12/15/common-vim/
 
-[Anki](http://ankisrs.net/) is an interesting tool for studying. It uses flash cards and a fancy pants algorithm based on Science™to determine the best time to show you cards so that you remember the things you're trying to learn.
+[Anki](http://ankisrs.net/) is an interesting tool for studying. It uses flash cards and a fancy pants algorithm based on Science™ to determine the best time to show you cards so that you remember the things you're trying to learn.
 
 The text file here can be imported into Anki and it contains almost 200 cards.
 
