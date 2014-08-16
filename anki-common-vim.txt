@@ -7,7 +7,7 @@ Change word. This will delete the word your cursor is over and enter into insert
 Change all text in between a set of parenthesis.	ci(
 If your cursor is in between a set of quotes, delete everything inside those quotes and drop into insert mode.	"ci"""
 Change text til the quotes.	"ct"""
-Delete text from cursor up til the 2nd quote in a line.	"2ct"""
+Change text from cursor up til the 2nd quote in a line.	"2ct"""
 Change from cursor backwards finding and including the previous quote.	"cF"""
 Delete until the end of the line and enter into insert mode.	C
 Change directories to one previous.	:cd ../
